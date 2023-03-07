@@ -5,7 +5,7 @@
   "main": "js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "ws -p 8080 --https --key ./certs/private-key.pem --cert ./certs/cert.pem --spa index.html",
+    "serve": "ws -p 8080 --https --key ./certs/key.pem --cert ./certs/cert.pem --spa index.html",
     "webauthn-server": "node server/webauthn-server.js",
     "start": "concurrently \"npm run serve\" \"npm run webauthn-server\""
   },
